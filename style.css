@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+  }
+  body{
+    background-color: beige;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .container{
+    border: solid brown medium;/* Delete this Code Later */
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 98vh;
+  }
+  .s-box{
+    grid-column: 1;
+    display: grid;
+    /* gap: 20px; */
+    /* border: solid brown medium;Delete this Code Later */
+    padding: 1rem;
+    background-color: #5495F3;
+    grid-template-rows:0.2fr 3.4fr 1.4fr ;
+
+  }
+  .container .s-box .icon-area{
+    display:flex;
+    flex: auto;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    top: 0;
+    height:fit-content ;
+    margin-bottom: 1.5rem;
+
+  }
+  .container .s-box .icon-area .icon img{
+    max-width: 50px;
+  }
+  .container .s-box .icon-area .icon-title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding-left: 0.3rem;
+    color: white;
+  }
+  .container .s-box .navs{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    justify-content: start;
+    height: fit-content;
+  }
+  .container .s-box .navs .nav-child{
+    display:flex;
+    flex: auto;
+    justify-content: start;
+    align-items: center;
+    height:fit-content ;
+    margin-bottom: 0.7rem;
+  }
+  .container .s-box .navs .nav-child .nav-icon{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .container .s-box .navs .nav-child .nav-icon img{
+    max-width: 20px;
+  }
+  .container .s-box .navs .nav-child .nav-icon-title{
+    color: white;
+    font-size: 1rem;
+    margin-left: 0.3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+  }
+  .container .s-box .navs .nav-child:nth-last-child(3){
+    margin-top: 2rem;
+  }
